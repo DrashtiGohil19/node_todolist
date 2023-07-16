@@ -1,0 +1,25 @@
+    <h2>Welcome <%= user %></h2>
+
+    <a href="/complete">completed task</a><br>
+
+    <a href="/decline">Decline task</a>
+
+
+<table border>
+    <tr>
+        <td>No</td>
+        <td>Task Name</td>
+        <td>Task Date</td>
+        <td>Complete</td>
+        <td>Decline</td>
+    </tr>
+    <% results.forEach(function(item, index) { %> 
+        <tr>
+            <td><%= index + 1 %></td>
+            <td><%= item.task %></td>
+            <td><%= item.date %></td>
+            <td><a href="/complete/<%= item.id %>">Complete</a></td>
+            <td><a href="/decline/<%= item.id %>">Decline</a></td>
+        </tr>
+    <% }); %>
+</table>

@@ -1,0 +1,26 @@
+<h2>Welcome <%= user %> </h2>
+
+<a href="/addtask">Add task</a>
+<a href="/register">Add user</a>
+
+    <table border>
+        <tr>
+            <td>No</td>
+            <td>Username</td>
+            <td>Total task</td>
+            <td>Number of pending</td>
+            <td>Number of complete</td>
+            <td>Number of decline</td>
+        </tr>
+        <% results.forEach(function(item,index){ %> 
+        <tr>
+            <td><%= index + 1 %></td>
+            <td><%= item.name %></td>
+            <td><%= item.total_task %></td>
+            <td><%= item.total_pending %></td>
+            <td><%= item.total_complete%></td>
+            <td><%= item.total_decline%></td>
+        </tr>
+        <% }); %>
+    </table>
+

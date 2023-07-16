@@ -1,0 +1,39 @@
+<form method="post">
+    <h3>Registration Form</h3>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Contact</td>
+            <td><input type="number" name="contact"></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td><select name="code">
+                <option value="select" selected disabled>--Select Code--</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender" value="male" />Male
+                <input type="radio" name="gender" value="female" />Female
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="save" value="Register"></td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,21 @@
+<% if (error) { %>
+    <p>Login failed. Please check your email and password.</p>
+<% } %>
+
+<form method="post">
+    <h3>Login Form</h3>
+    <table>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Login" name="save"></td>
+        </tr>
+    </table>
+</form>

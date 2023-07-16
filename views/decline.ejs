@@ -1,0 +1,16 @@
+<h2>List of <%= user %>'s decline task</h2>
+
+<table border>
+    <tr>
+        <td>No</td>
+        <td>Task name</td>
+        <td>Status</td>
+    </tr>
+    <% results.forEach(function(item,index){ %> 
+    <tr>
+        <td><%= index +1 %></td>
+        <td><%= item.task %></td>
+        <td>Decline</td>
+    </tr>
+    <% }); %>
+</table>

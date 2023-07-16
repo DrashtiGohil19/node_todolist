@@ -1,0 +1,33 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>Date</td>
+            <td><input type="date" name="date"></td>
+        </tr>
+        <tr>
+            <td>Select User</td>
+            <td>
+                <select name="selectedUser">
+                    <option value="select user" disabled selected>---Select User---</option>
+                    <% results.forEach(function(user) { %>
+                        <option value="<%= user.name %>">
+                            <%= user.name %>
+                        </option>
+                        <% }) %>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Add task</td>
+            <td>
+                <input type="text" placeholder="Add task" name="task">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Add">
+            </td>
+        </tr>
+    </table>
+</form>
